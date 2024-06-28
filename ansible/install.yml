@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Ensure a file is present
+      file:
+        path: /tmp/hello_world.txt
+        state: touch
